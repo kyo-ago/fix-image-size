@@ -13,17 +13,17 @@
 	img.style.objectFit = "contain";
 
 	let setZoomIn = () => {
-		img.style.cursor = "zoom-in";
+		img.style.cursor = "zoom-out";
 		img.style.width = "100%";
 		img.style.height = "100%";
 	}
 	let setZoomOut = () => {
 		img.style.width = "";
 		img.style.height = "";
-		img.style.cursor = "zoom-out";
+		img.style.cursor = "zoom-in";
 	}
 
-	setZoomIn();
+	setZoomOut();
 	img.addEventListener("click", () => {
 		if (img.style.width) {
 			setZoomOut();
